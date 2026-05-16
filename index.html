@@ -103,22 +103,22 @@ body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#f4f8f6;c
 .bw .bv{font-size:12px;color:#5a7a6a;width:110px;flex-shrink:0;text-align:right}
 
 /* ===== 发展建议 ===== */
-.sg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
-@media(max-width:500px){.sg{grid-template-columns:1fr}}
-.sc{border-radius:10px;padding:18px}
-.sc.ad{background:#f0faf4;border:1px solid #b8d6c8}
-.sc.rk{background:#fff8f2;border:1px solid #ffd4a0;border-left:4px solid #e67e00}
-.sc .ti{font-size:22px;margin-bottom:4px}
-.sc .tt{font-size:16px;font-weight:700;margin-bottom:10px}
-.sc.ad .tt{color:#1a7a45}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+@media(max-width:640px){.sg{grid-template-columns:1fr}}
+.sc{border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.sc.ad{background:linear-gradient(135deg,#f0faf4,#e4f5ec);border:1px solid #b8d6c8}
+.sc.rk{background:linear-gradient(135deg,#fff8f2,#fff0e5);border:1px solid #ffd4a0;border-left:4px solid #e67e00}
+.sc .ti{font-size:24px;margin-bottom:6px}
+.sc .tt{font-size:15px;font-weight:700;margin-bottom:12px}
+.sc.ad .tt{color:#0d5e33}
 .sc.rk .tt{color:#c05a00}
-.sc ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.sc ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
 @media(max-width:480px){.sc ul{grid-template-columns:1fr}}
-.sc li{font-size:13px;color:#3a5a4a;padding:6px 8px 6px 24px;position:relative;background:#fff;border-radius:4px;border:1px solid #e2ece6}
+.sc li{font-size:13px;color:#3a5a4a;padding:8px 10px 8px 28px;position:relative;background:#fff;border-radius:6px;border:1px solid #e2ece6;line-height:1.5;box-shadow:0 1px 2px rgba(0,0,0,.02)}
 .sc.ad li{border-color:#d0e8dc}
 .sc.rk li{border-color:#ffe0b8}
-.sc.ad li:before{content:'✅';position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:11px}
-.sc.rk li:before{content:'⚠️';position:absolute;left:6px;top:50%;transform:translateY(-50%);font-size:12px;color:#e67e00}
+.sc.ad li:before{content:'✅';position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:11px}
+.sc.rk li:before{content:'⚠️';position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:12px;color:#e67e00}
 .sc.rk li{color:#5a4030}
 
 /* ===== 对比表 ===== */
@@ -155,30 +155,57 @@ details.rf summary{cursor:pointer;font-size:13px;font-weight:600;color:#1a7a45;p
 
 /* ===== 移动端适配 ===== */
 @media(max-width:600px){
-  body{padding-top:72px}
-  .top{padding:12px 10px}
-  .top h1{font-size:20px}
-  .top .sub{font-size:11px}
-  .w{padding:10px}
+  body{padding-top:68px;font-size:15px;line-height:1.6}
+  .top{padding:10px 8px}
+  .top h1{font-size:18px}
+  .top .sub{font-size:10px;margin-top:1px}
+  .w{padding:8px 10px}
+  .cd{border-radius:8px;margin-bottom:12px}
+  .cd-h{padding:10px 14px;font-size:14px}
   .cd-b{padding:12px}
   .g2{gap:8px}
   .it{padding:8px 10px}
   .it input{font-size:14px;padding:5px 8px}
+  .it .r1 .nm{font-size:12px}
+  .it .r2{font-size:11px}
   .dc{padding:8px}
   .dc .dv{font-size:22px}
+  .dc .dn{font-size:12px}
+  .dc .db{font-size:10px}
   .rc{width:280px;height:250px}
   .sg{gap:10px}
   .sc{padding:14px}
-  .sc li{font-size:12px;padding:5px 6px 5px 20px}
-  .sc ul{gap:3px}
+  .sc .tt{font-size:14px}
+  .sc li{font-size:12px;padding:6px 8px 6px 22px}
+  .sc ul{gap:4px}
   .bw .lb{width:60px;font-size:11px}
   .bw .bv{width:80px;font-size:11px}
-  .sc-card .sc-row{flex-wrap:wrap}
-  .sc-card .sc-item{min-width:80px}
+  .bn .pt{font-size:18px;padding:8px 20px}
+  .sc-card{padding:12px}
+  .sc-card .sc-row{flex-wrap:wrap;gap:4px}
+  .sc-card .sc-item{min-width:70px}
   .sc-card .sc-item .sc-num{font-size:18px}
+  .sc-card .sc-item .sc-lb{font-size:10px}
+  .ml{font-size:12px}
+  .mi{font-size:11px}
+  .mb{height:22px}
+  .mb .s{font-size:10px}
+  .sh{font-size:14px;margin:14px 0 8px}
+  .sh .sd{font-size:11px}
   .acts{gap:6px}
   .btn{padding:8px 12px;font-size:12px}
-  .btn-export{min-width:120px}
+  .btn-pri{min-width:80px;font-size:12px}
+  .btn-lo{font-size:11px}
+  .ct{font-size:11px}
+  .ct th,.ct td{padding:4px 6px;font-size:11px}
+  .dg{gap:8px}
+  .rl{font-size:11px;gap:10px}
+  .bl{font-size:11px;gap:10px}
+  .disclaimer{font-size:10px;padding:6px 10px}
+  .sf{font-size:10px}
+  .export-popup{right:10px}
+  .db{text-align:center}
+  .btn-export{min-width:100px;font-size:12px}
 }
 
 @page{margin:15mm}
@@ -487,7 +514,7 @@ function dlWord(){
     +'<p>采用TOPSIS（逼近理想解排序法）进行多准则决策分析。将8项参数归一化后，计算各方案与正/负理想解的加权欧氏距离，得出贴近度得分。权重分配基于中观经济学三维模型：资源转化30%、公共支撑25%、生态构建30%（另有政府角色15%折算计入）。以克拉玛依（生态构建型）和伊吾（资源转化型）为双案例标杆，数据来源为新疆统计局及两地政府公开数据（A级=官方统计，B级=政府公告）。</p>'
     +'<p style="text-align:center;font-size:8pt;color:#9ab8a8;margin-top:30px;border-top:1px solid #d8e6de;padding-top:10px">本报告由绿算治策决策支持系统生成 · 中国国际大学生创新大赛（2026）</p></body></html>';
   document.getElementById('exportPopup').classList.remove('show');
-  const b=new Blob(['\ufeff'+html],{type:'application/msword;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='绿算治策评估报告_'+regionName+'_'+new Date().toISOString().slice(0,10)+'.doc';a.click();
+  const b=new Blob(['\ufeff'+html],{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='绿算治策评估报告_'+regionName+'_'+new Date().toISOString().slice(0,10)+'.docx';a.click();
 }
 function dlPDF(){
   document.getElementById('exportPopup').classList.remove('show');
@@ -495,88 +522,66 @@ function dlPDF(){
   const regionName=document.getElementById('region').value||'未知地区';const ad=ADVICE_MAP[r.path]||ADVICE_MAP['混合型'];
   const dimRows=DIMS.map(d=>'<tr><td>'+d.n+'</td><td>'+dimScore(u,d.t)+'分</td><td>'+dimScore(BM.karamay,d.t)+'分</td><td>'+dimScore(BM.yiwu,d.t)+'分</td></tr>').join('');
   const paramRows=KS.map(k=>'<tr><td>'+LB[k]+'</td><td>'+ds(u[k],k)+'</td><td>'+ds(BM.karamay[k],k)+'</td><td>'+ds(BM.yiwu[k],k)+'</td></tr>').join('');
+  const adDetail={
+    '生态构建型':{advs:['设立产业引导基金，建议规模30-50亿元，撬动社会资本5-10倍杠杆','发放算力券/运营补贴，每年预算不低于1000万元，降低中小企业用算门槛','开放政务、能源、文旅、教育、医疗等城市级应用场景吸引企业入驻','建设公共算力服务平台，提供低价算力+技术支撑+数据开放服务','实施高层次人才引进补贴+本地高校联合培养双重人才政策','规划绿电直供+液冷技术路线，新建数据中心PUE控制在1.10以下','推动行业龙头企业落地，带动上下游产业链集聚形成规模效应','建立产业技术创新联盟，促进产学研协同与科技成果转化','建设产业数字化监测平台，实时跟踪重点企业运营与产能利用率','争取国家级算力枢纽节点布局，融入全国一体化算力网络'],risks:['财政补贴依赖：补贴退出机制需在设计初期就纳入，设定3-5年递减退出计划','产业地产化空置：土地供应与企业入驻进度挂钩，严禁超前储备产业用地','人才留存困难：需同步配套住房保障、子女教育、医疗等软环境建设','产能过剩风险：算力规模扩张速度需与本地消纳能力增长相匹配','单一企业依赖：避免过度依赖某一家龙头企业，培育第二梯队企业集群','绿电供应波动：配套储能设施或备用线路保障数据中心稳定运行']},
+    '资源转化型':{advs:['集中财政投向输变电、园区路网、通讯三网等硬基础设施','发挥电价、地价、气候三重成本优势，制定差异化招商优惠政策','建设跨区域高速光纤网络，降低与东部算力消费市场的网络延迟','主动对接长三角、珠三角、京津冀算力需求，承接温冷数据业务','初期聚焦数据存储、灾备、离线训练等温冷业务，积累运营经验','基础设施按远期T级标准一次性规划，分期建设避免重复投资','探索绿电+储能的柔性供电方案，降低电价波动对运营成本影响','建立或接入跨省算力交易平台，拓宽算力消纳渠道稳定收入来源','争取自治区/国家级绿色算力试点政策，获取电价、税收、土地优惠','采取"建成一片、运营一片、收益一片"的滚动开发模式控制风险'],risks:['产能空置风险：坚持分期建设、按需扩容，避免超前建设导致机柜空置','单一客户依赖：主动分散客户结构，单一大客户收入占比控制在30%以下','绿电波动风险：需配套储能或双回路备用线路保障数据中心连续供电','生态厚度短板：长期需补齐人才、金融、生产性服务等软件短板','低端锁定风险：避免陷入纯价格竞争，逐步向服务质量和运营效率升级','远离东部市场：需优化网络架构控制传输成本与延迟','政策变动风险：电价、税收等优惠政策需与地方政府签订长期协议']},
+    '混合型':{advs:['资源端占优（电价低、气温低、用地多）→优先走资源转化路径','产业端占优（企业多、场景多、有人才）→逐步向生态构建路径过渡','首期投资规模控制在预算可承受范围内，先做小范围试点验证','选择1-2个本地最具竞争力的细分领域集中资源重点突破','参考克拉玛依/伊吾标杆案例，制定3年阶梯式发展路线图','建立产业政策效果评估机制，每半年复盘一次及时调整策略','积极争取上级政府专项资金支持，撬动更多外部资源投入','避免与成熟算力枢纽正面竞争，专注差异化细分市场','优先补齐交通、通讯、能源等基础设施短板营造基本产业环境','按照"筑巢→引凤→育林→成势"四阶段有序推进产业发展'],risks:['方向摇摆：选定主路径后坚持执行至少2年，避免频繁切换浪费资源','低水平重复：注重差异化定位，避免与其他地区同质化低端竞争','基础薄弱：资源与产业两端条件都一般时，先集中补齐最短板','投资过大：首期投资规模切勿贪大，匹配本地财政承受能力量力而行','急于求成：产业培育通常需要3-5年才见成效，避免急功近利','什么都想抓：混合型地区最容易陷入目标发散误区，必须聚焦']}
+  };
+  const det=adDetail[r.path]||adDetail['混合型'];
+  const detAdvs=det.advs.map(a=>'<li>'+a+'</li>').join('');
+  const detRisks=det.risks.map(a=>'<li>'+a+'</li>').join('');
 
-  // PDF = Word文档的PDF版本，用新窗口+打印方式输出（纯净文本，非截图）
-  const doc='<!DOCTYPE html><html><head><meta charset="utf-8"><title>绿色算力产业评估报告</title>'
-    +'<style>@page{margin:18mm 20mm}'
-    +'body{font-family:SimSun,STSong,serif;color:#222;font-size:11pt;line-height:1.9}'
+  const html='<!DOCTYPE html><html><head><meta charset="utf-8"><title>绿色算力产业评估报告_'+regionName+'</title><style>'
+    +'@page{margin:20mm 22mm;size:A4}'
+    +'*{box-sizing:border-box;margin:0;padding:0}'
+    +'body{font-family:SimSun,STSong,serif;color:#222;font-size:11pt;line-height:1.9;padding:0}'
     +'h1{text-align:center;color:#0d5e33;font-size:20pt;margin-bottom:2px;font-family:SimHei,sans-serif}'
     +'.sub{text-align:center;font-size:9pt;color:#777;margin-bottom:16px;border-bottom:1.5px solid #0d5e33;padding-bottom:8px}'
-    +'.box{text-align:center;padding:12px;background:#f0faf4;border:1.5px solid #1a7a45;border-radius:4px;margin-bottom:16px}'
+    +'.box{text-align:center;padding:12px 16px;background:#f0faf4;border:1.5px solid #1a7a45;border-radius:4px;margin-bottom:16px;page-break-inside:avoid}'
     +'.box .t{font-size:16pt;font-weight:bold;color:#1a7a45;font-family:SimHei,sans-serif}'
     +'.box .d{font-size:10pt;color:#555;margin-top:4px}'
-    +'h2{font-size:13pt;color:#0d5e33;border-bottom:1px solid #0d5e33;padding-bottom:3px;margin-top:18px;margin-bottom:8px;font-family:SimHei,sans-serif}'
-    +'table{width:100%;border-collapse:collapse;margin:6px 0}'
-    +'th{background:#f0faf4;padding:4px 6px;border:1px solid #d8e6de;text-align:left;font-size:9pt}'
-    +'td{padding:3px 6px;border:1px solid #e6efe9;font-size:9pt}'
+    +'h2{font-size:13pt;color:#0d5e33;border-bottom:1px solid #0d5e33;padding-bottom:3px;margin-top:22px;margin-bottom:10px;font-family:SimHei,sans-serif}'
+    +'table{width:100%;border-collapse:collapse;margin:8px 0;page-break-inside:avoid}'
+    +'th{background:#f0faf4;padding:5px 8px;border:1px solid #d8e6de;text-align:left;font-size:9.5pt}'
+    +'td{padding:4px 8px;border:1px solid #e6efe9;font-size:9.5pt}'
     +'.uc{font-weight:bold;color:#e67e00}'
-    +'ul{padding-left:18px;margin:4px 0}li{margin-bottom:3px;font-size:9pt}'
-    +'p{font-size:10pt;margin:4px 0}'
-    +'.footer{text-align:center;font-size:8pt;color:#aaa;margin-top:24px;border-top:1px solid #ddd;padding-top:8px}'
-    +'@media print{body{color:#000;font-size:10pt}}'
+    +'ul{padding-left:22px;margin:6px 0}'
+    +'li{margin-bottom:4px;font-size:10pt;line-height:1.7;page-break-inside:avoid}'
+    +'p{font-size:10pt;margin:6px 0;text-indent:2em}'
+    +'.footer{text-align:center;font-size:8pt;color:#aaa;margin-top:28px;border-top:1px solid #ddd;padding-top:8px}'
+    +'@media print{body{color:#000}section{page-break-inside:avoid}}'
     +'</style></head><body>'
     +'<h1>⚡ 绿算治策 · 绿色算力产业评估报告</h1>'
     +'<p class="sub">'+regionName+' · '+new Date().toLocaleString('zh-CN')+'</p>'
     +'<div class="box"><div class="t">'+r.path+'</div><div class="d">'+r.desc+'</div></div>'
     +'<h2>一、评估摘要</h2>'
-    +'<p>推荐路径：<b>'+r.path+'</b>。生态构建型匹配度<b>'+r.simK+'%</b>，资源转化型匹配度<b>'+r.simY+'%</b>。TOPSIS综合贴近度：'+r.cU.toFixed(3)+'。'+(r.simK>r.simY?'地区发展条件更接近克拉玛依的生态构建型模式，建议重点参考克拉玛依的产业发展经验。':'地区发展条件更接近伊吾的资源转化型模式，建议重点参考伊吾的成本驱动发展经验。')+'</p>'
-    +'<h2>二、三维模型评估</h2>'
-    +'<p>基于中观经济学理论，从资源转化（电价·气温·用地）、公共支撑（财政·行政）、生态构建（企业·场景·高校）三个维度综合评分。</p>'
-    +'<table><tr><th>维度</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th></tr>'+dimRows+'</table>'
-    +'<h2>三、参数得分</h2>'
+    +'<p>本报告对<b>'+regionName+'</b>的绿色算力产业发展条件进行了系统评估。基于TOPSIS多准则决策分析模型，以克拉玛依市（生态构建型标杆）和伊吾县（资源转化型标杆）为双案例参照。经计算，'+regionName+'的生态构建型匹配度为<b>'+r.simK+'%</b>，资源转化型匹配度为<b>'+r.simY+'%</b>，综合贴近度得分'+r.cU.toFixed(3)+'。推荐发展路径为<b>'+r.path+'</b>。</p>'
+    +'<h2>二、三维模型评分</h2>'
+    +'<p>基于中观经济学理论基础，从资源转化（电价、气温、用地）、公共支撑（财政、行政层级）、生态构建（企业、场景、高校）三个核心维度进行综合评分，各维度满分100分。</p>'
+    +'<table><tr><th>评估维度</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th><th>说明</th></tr>'
+    +'<tr><td>资源转化</td><td>'+dimScore(u,'resource')+'分</td><td>'+dimScore(BM.karamay,'resource')+'分</td><td>'+dimScore(BM.yiwu,'resource')+'分</td><td>电价·气温·用地</td></tr>'
+    +'<tr><td>公共支撑</td><td>'+dimScore(u,'support')+'分</td><td>'+dimScore(BM.karamay,'support')+'分</td><td>'+dimScore(BM.yiwu,'support')+'分</td><td>财政收入·行政层级</td></tr>'
+    +'<tr><td>生态构建</td><td>'+dimScore(u,'eco')+'分</td><td>'+dimScore(BM.karamay,'eco')+'分</td><td>'+dimScore(BM.yiwu,'eco')+'分</td><td>企业数·场景·高校</td></tr></table>'
+    +'<h2>三、参数得分明细</h2>'
+    +'<p>以下为8项评估指标归一化得分（0-100分），得分越高表示该指标条件越优。</p>'
     +'<table><tr><th>指标</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th></tr>'+paramRows+'</table>'
-    +'<h2>四、行动建议</h2><ul>'+ad.advs.map(a=>'<li>'+a+'</li>').join('')+'</ul>'
-    +'<h2>五、风险提示</h2><ul>'+ad.risks.map(a=>'<li>'+a+'</li>').join('')+'</ul>'
-    +'<h2>六、原始数据</h2>'
+    +'<h2>四、行动建议（共'+det.advs.length+'项）</h2>'
+    +'<p>根据路径匹配结果（'+r.path+'），为'+regionName+'量身定制以下发展建议：</p>'
+    +'<ul>'+detAdvs+'</ul>'
+    +'<h2>五、风险提示（共'+det.risks.length+'项）</h2>'
+    +'<p>在实施上述建议过程中，需重点关注以下风险：</p>'
+    +'<ul>'+detRisks+'</ul>'
+    +'<h2>六、原始数据对比</h2>'
     +'<table><tr><th>指标</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th></tr>'
     +KS.map(k=>'<tr><td>'+LB[k]+'</td><td class="uc">'+u[k]+' '+CF[k].u+'</td><td>'+BM.karamay[k]+' '+CF[k].u+'</td><td>'+BM.yiwu[k]+' '+CF[k].u+'</td></tr>').join('')+'</table>'
-    +'<p class="footer">绿算治策 · 绿色算力产业评估报告</p></body></html>';
+    +'<h2>七、评估方法</h2>'
+    +'<p>采用TOPSIS（逼近理想解排序法）进行多准则决策分析。将8项参数归一化后，计算各方案与正/负理想解的加权欧氏距离，得出贴近度得分。权重分配基于中观经济学三维模型。以克拉玛依（生态构建型）和伊吾（资源转化型）为双案例标杆。</p>'
+    +'<p class="footer">本报告由绿算治策决策支持系统生成</p></body></html>';
 
-  // PDF使用与Word相同的详细HTML（离屏渲染→直接下载）
-  const pdfHtml='<!DOCTYPE html><html><head><meta charset="utf-8"><title>绿色算力产业评估报告</title><style>body{font-family:SimSun,STSong,serif;padding:30px;line-height:1.8}h1{text-align:center;color:#0d5e33;font-size:22pt;font-family:SimHei}h2{font-size:14pt;color:#0d5e33;border-bottom:1.5px solid #0d5e33;padding-bottom:4px;margin-top:24px;margin-bottom:10px;font-family:SimHei}.sub{text-align:center;font-size:10pt;color:#6a8a7a;margin-bottom:20px;border-bottom:2px solid #0d5e33;padding-bottom:10px}.path-box{text-align:center;padding:14px;background:#f0faf4;border:2px solid #1a7a45;border-radius:6px;margin-bottom:20px}.path-title{font-size:18pt;font-weight:bold;color:#1a7a45;font-family:SimHei}table{width:100%;border-collapse:collapse;margin:8px 0}th{background:#f0faf4;padding:6px 10px;border:1px solid #d8e6de;text-align:left;font-size:10pt}td{padding:5px 10px;border:1px solid #e6efe9;font-size:10pt}.uc{background:#fffbf2;font-weight:bold;color:#e67e00}ul{padding-left:20px}li{margin-bottom:5px;font-size:10pt}.footer{text-align:center;font-size:8pt;color:#9ab8a8;margin-top:30px;border-top:1px solid #d8e6de;padding-top:10px}</style></head><body>'
-    +'<h1>⚡ 绿算治策 · 绿色算力产业评估报告</h1><p class="sub">'+regionName+' · '+new Date().toLocaleString('zh-CN')+'</p>'
-    +'<div class="path-box"><div class="path-title">'+r.path+'</div><p style="font-size:10pt;color:#4a6a5a;margin-top:6px">'+r.desc+'</p></div>'
-    +'<h2>一、评估摘要</h2><p>本报告对<b>'+regionName+'</b>的绿色算力产业发展条件进行了系统评估。基于TOPSIS模型，经计算生态构建型匹配度为<b>'+r.simK+'%</b>，资源转化型匹配度为<b>'+r.simY+'%</b>。推荐发展路径为<b>'+r.path+'</b>。</p>'
-    +'<h2>二、三维模型评分</h2><table><tr><th>维度</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th></tr>'
-    +'<tr><td>资源转化</td><td>'+dimScore(u,'resource')+'分</td><td>'+dimScore(BM.karamay,'resource')+'分</td><td>'+dimScore(BM.yiwu,'resource')+'分</td></tr>'
-    +'<tr><td>公共支撑</td><td>'+dimScore(u,'support')+'分</td><td>'+dimScore(BM.karamay,'support')+'分</td><td>'+dimScore(BM.yiwu,'support')+'分</td></tr>'
-    +'<tr><td>生态构建</td><td>'+dimScore(u,'eco')+'分</td><td>'+dimScore(BM.karamay,'eco')+'分</td><td>'+dimScore(BM.yiwu,'eco')+'分</td></tr></table>'
-    +'<h2>三、参数得分明细</h2><table><tr><th>指标</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th></tr>'+paramRows+'</table>'
-    +'<h2>四、行动建议（共10项）</h2><ul>'+ad.advs.map(a=>'<li><b>'+a.t+'</b> — '+a.p+' · '+a.d+'<br><span style="font-size:9pt;color:#666">💎预期：'+a.e+' ｜ 💰投入：'+a.c+'</span></li>').join('')+'</ul>'
-    +'<h2>五、风险提示</h2><ul>'+ad.risks.map(a=>'<li>'+a.t+' — '+a.p+'</li>').join('')+'</ul>'
-    +'<h2>六、原始数据对比</h2><table><tr><th>指标</th><th>'+regionName+'</th><th>克拉玛依</th><th>伊吾</th></tr>'
-    +KS.map(k=>'<tr><td>'+LB[k]+'</td><td class="uc">'+u[k]+' '+CF[k].u+'</td><td>'+BM.karamay[k]+' '+CF[k].u+'</td><td>'+BM.yiwu[k]+' '+CF[k].u+'</td></tr>').join('')+'</table>'
-    +'<p class="footer">本报告由绿算治策决策支持系统生成 · 仅供参考</p></body></html>';
-
-  const el=document.createElement('div');el.innerHTML=pdfHtml;
-  el.style.cssText='position:fixed;left:-9999px;top:0;width:700px;background:#fff;padding:0';
-  document.body.appendChild(el);
-  
-  setTimeout(function(){
-    html2canvas(el,{scale:2,useCORS:true,logging:false,backgroundColor:'#ffffff'}).then(canvas=>{
-      const pdf=new jspdf.jsPDF({unit:'mm',format:'a4',orientation:'portrait'});
-      const img=canvas.toDataURL('image/jpeg',0.95);
-      const px=canvas.width, py=canvas.height;
-      // A4: 210x297mm. 每mm对应 px/210 像素
-      const ppmm=px/210; // pixels per mm
-      const totalPages=Math.ceil(py/(297*ppmm));
-      for(let p=0;p<totalPages;p++){
-        if(p>0)pdf.addPage();
-        const sy=p*297*ppmm;
-        const sh=Math.min(297*ppmm,py-sy);
-        if(sh<py){
-          const c=document.createElement('canvas');c.width=px;c.height=sh;
-          c.getContext('2d').drawImage(canvas,0,-sy);
-          pdf.addImage(c.toDataURL('image/jpeg',0.95),'JPEG',0,0,210,sh/ppmm);
-        }else{
-          pdf.addImage(img,'JPEG',0,0,210,py/ppmm);
-          break;
-        }
-      }
-      pdf.save('绿算治策评估报告_'+regionName+'_'+new Date().toISOString().slice(0,10)+'.pdf');
-      document.body.removeChild(el);
-    }).catch(function(){document.body.removeChild(el);alert('PDF生成失败，请使用Word导出')});
-  }, 800);
+  const w=window.open('','_blank');
+  w.document.write(html);
+  w.document.close();
+  setTimeout(function(){w.print();w.close()},500);
 }
 
 // ═════ 辅助功能 ═════
