@@ -406,8 +406,7 @@ function go(){
 
   const dh=DIMS.map(d=>{
     const us=dimScore(u,d.t),k2=dimScore(BM.karamay,d.t),y2=dimScore(BM.yiwu,d.t);
-    const c=us>=60?d.c:us>=35?'#e67e00':'#d05050';
-    return `<div class="dc" title="${d.n}维度：基于${d.ks.join('、')}综合评分"><div class="dn">${d.n}</div><div class="dv" style="color:${c}">${us}</div><div class="db">克${k2} · 伊${y2}</div></div>`;
+    return `<div class="dc" title="${d.n}维度：基于${d.ks.join('、')}综合评分"><div class="dn">${d.n}</div><div class="dv" style="color:${d.c}">${us}</div><div class="db">克${k2} · 伊${y2}</div></div>`;
   }).join('');
 
   const radarScores=[DIMS.map(d=>dimScore(BM.karamay,d.t)/100),DIMS.map(d=>dimScore(BM.yiwu,d.t)/100),DIMS.map(d=>dimScore(u,d.t)/100)];
